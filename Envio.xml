@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mensaje nummsg="105964544" version="1" fecha="2022-06-27T19:55:32.321+02:00" claseMensaje="2" tipoElemento="1">
+    <envio codAplicacion="94" internacional="N" idAdmision="PQ44440200054940135001K" unidadAdmision="2812796" regManual="N" idAdmisionForzado="N" longitud="0.14" unidadMedidaLongitud="MTR" anchura="0.13" unidadMedidaAnchura="MTR" altura="0.13" unidadMedidaAltura="MTR" alturaCert="S">
+        <eventosEnvio>
+            <evento fechaHora="2022-06-27T19:55:32.321+02:00"/>
+            <evento fechaHora="2022-06-27T19:55:32.321+02:00"/>
+        </eventosEnvio>
+    </envio>
+</mensaje>

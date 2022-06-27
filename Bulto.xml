@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bulto>
+    <nummsg>105964544</nummsg>
+    <version>1</version>
+    <fecha>2022-06-27T18:49:49.871+02:00</fecha>
+    <claseMensaje>2</claseMensaje>
+    <tipoElemento>1</tipoElemento>
+    <codAplicacion>94</codAplicacion>
+    <internacional>N</internacional>
+    <idAdmision>PQ44440200054940135001K</idAdmision>
+    <unidadAdmision>2812796</unidadAdmision>
+    <regManual>N</regManual>
+    <idAdmisionForzado>N</idAdmisionForzado>
+    <longitud>0.14</longitud>
+    <unidadMedidaLongitud>MTR</unidadMedidaLongitud>
+    <anchura>0.13</anchura>
+    <unidadMedidaAnchura>MTR</unidadMedidaAnchura>
+    <altura>0.13</altura>
+    <unidadMedidaAltura>MTR</unidadMedidaAltura>
+    <alturaCert>S</alturaCert>
+    <fechaHora>2022-06-27T18:49:49.871+02:00</fechaHora>
+</bulto>

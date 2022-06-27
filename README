@@ -1,0 +1,53 @@
+XML-PARSER-EXAMPLE
+
+Micro de ejemplo de parseo entre objetos y XML.
+
+El servicio consta de dos funcionalidades. Cada funcionalidad comienza en uno de estos dos controllers:
+
+1º BultoController 
+	
+	-Bulto_to_XML (http://localhost:8080/transform/bulto_to_xml)
+Endpoint GET. Sin necesidad de pasarle nada, emplea un objeto BultoIRISDTO construido en el propio controller, lo parsea en el service a XML, 
+almacena en el archivo Bulto.xml en la raiz del proyecto y devuelve la siguiente estructura:
+
+<bulto>
+	<nummsg>105964544</nummsg>
+	<version>1</version>
+	<fecha>2022-06-27T18:49:49.871+02:00</fecha>
+	<claseMensaje>2</claseMensaje>
+	<tipoElemento>1</tipoElemento>
+	<codAplicacion>94</codAplicacion>
+	<internacional>N</internacional>
+	<idAdmision>PQ44440200054940135001K</idAdmision>
+	<unidadAdmision>2812796</unidadAdmision>
+	<regManual>N</regManual>
+	<idAdmisionForzado>N</idAdmisionForzado>
+	<longitud>0.14</longitud>
+	<unidadMedidaLongitud>MTR</unidadMedidaLongitud>
+	<anchura>0.13</anchura>
+	<unidadMedidaAnchura>MTR</unidadMedidaAnchura>
+	<altura>0.13</altura>
+	<unidadMedidaAltura>MTR</unidadMedidaAltura>
+	<alturaCert>S</alturaCert>
+	<fechaHora>2022-06-27T18:49:49.871+02:00</fechaHora>
+</bulto>
+
+	-xml_to_bulto (http://localhost:8080/transform/xml_to_bulto)
+Endpoint GET. Sin necesidad de pasarle nada, emplea el documento Bulto.xml y extrae el XML para crear un objeto BultoIRISDTO.
+
+
+2º EnvioIRISController
+
+	-envio_to_xml (http://localhost:8080/transform_envio/envio_to_xml)
+Endpoint GET. Sin necesidad de pasarle nada, emplea un objeto EnvioIRISDTO construido en el propio controller, lo parsea en el service a XML, 
+almacena en el archivo Envio.xml en la raiz del proyecto y devuelve la siguiente estructura, que es la que se muestra en los documentos adjuntos de la tarea:
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mensaje nummsg="105964544" version="1" fecha="2022-06-27T19:55:32.321+02:00" claseMensaje="2" tipoElemento="1">
+    <envio codAplicacion="94" internacional="N" idAdmision="PQ44440200054940135001K" unidadAdmision="2812796" regManual="N" idAdmisionForzado="N" longitud="0.14" unidadMedidaLongitud="MTR" anchura="0.13" unidadMedidaAnchura="MTR" altura="0.13" unidadMedidaAltura="MTR" alturaCert="S">
+        <eventosEnvio>
+            <evento fechaHora="2022-06-27T19:55:32.321+02:00"/>
+            <evento fechaHora="2022-06-27T19:55:32.321+02:00"/>
+        </eventosEnvio>
+    </envio>
+</mensaje>
